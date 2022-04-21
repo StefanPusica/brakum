@@ -1,0 +1,29 @@
+.About {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.about-container {
+    width: 92%;
+}
+
+
+@media screen and (max-width: 541px) {
+    .About {
+        margin-top: 2rem;
+    }
+}
+
+/* @media screen and (max-width: 530px) {
+    .About {
+        margin-top: 15rem;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .About {
+        margin-top: 20rem;
+    }
+} */

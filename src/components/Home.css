@@ -1,0 +1,214 @@
+.home {
+    display: flex;
+    justify-content: center;
+}
+
+.container-home {
+    display: flex;
+    justify-content: center;
+    background-color: var(--color-blue);
+    height: 79vh;
+    width: 100%;
+}
+
+.home-left-side {
+    display: flex;
+    align-items: center;
+    width: 35%;
+    background-color: var(--color-blue);
+}
+
+
+.home-left-side-holder {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 4rem;
+    z-index: 1;
+}
+
+.home-right-side {
+    width: 65%;
+    background-image: url(../assets/bannerLayer.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.home-left-side-holder-part1 {
+    width: 30rem;
+}   
+
+.home-left-side-holder-part1 h1 {
+    font-size: 2.8rem;
+    color: var(--color-white);
+    margin-bottom: 1.3rem;
+}
+
+.home-left-side-holder-part1 p {
+    color: var(--color-white);
+    font-size: 1rem;
+    font-weight: 400;
+    margin-bottom: 1.3rem;
+    line-height: -1;
+}
+
+.home-left-side-holder-part1 .btn {
+    background-color: var(--color-white);
+    padding: 1rem 2rem;
+    text-decoration: none;
+    font-weight: 600;
+    color: var(--color-blue);
+}
+
+.home-left-side-holder-part1  .p_hero {
+    margin-bottom: 2rem;
+}
+
+.home-left-side-holder-part2 {
+    transform: translateX(-200px);
+}
+
+.home-left-side-holder-part2 img {
+    transform: translateY(1.3rem);
+}
+
+
+.home-card-holder {
+    width: 100%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    align-items: flex-end;
+    justify-content: center;
+    color: var(--color-white);
+    transform: translate(-5rem, 5rem);
+}
+
+.home-card-holder .card {
+    background-color: var(--color-blue);
+    width: 7rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+    padding: 1.3rem;
+}
+
+.home-card-holder .card h3 {
+    text-transform: uppercase;
+    font-size: 0.7rem;
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+
+.card-icon {
+    font-size: 2.5rem;
+}
+
+@media screen and (max-width: 870px) {
+    .container-home {
+        flex-direction: column;
+        height: 180vh;
+    }
+    
+    .home-left-side {
+        height: 100%;
+        width: 100%;
+    }
+
+    .home-right-side {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .home-left-side-holder {
+        width: 100%;
+    }
+
+    .home-left-side-holder-part1 {
+        width: 65%;
+    }
+
+    .home-left-side-holder-part2 {
+        width: 35%;
+        transform: translateX(-150px);
+    }
+
+    .home-card-holder {
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto;
+        transform: translateX(0);
+    }
+}
+
+@media screen and (max-width: 580px) {
+    .home-left-side-holder-part2 {
+        transform: translate(-170px, 30px);
+    }
+
+    .home-left-side {
+        margin-top: 0;
+    }
+
+}
+
+@media screen and (max-width: 540px) {
+    .container-home {
+        margin-top: 0rem;
+    }
+
+    .home-left-side-holder-part2 {
+        display: none;
+    }
+
+    .home-left-side-holder-part1 {
+        width: 100%;
+    }
+
+    .home-left-side-holder {
+        padding-left: 0;
+        padding: 2rem;
+    }
+
+    .home-right-side {
+        height: 90vh;
+    }
+
+    .home-card-holder {
+        padding: 5rem 0 5rem 0;
+    }
+
+    .home-card-holder .card {
+        width: 7rem;
+    }
+
+    .card-icon {
+        font-size: 1.5rem;
+    }
+
+    
+}
+
+@media screen and (max-width: 430px) {
+    .container-home {
+        height: 100%;
+    }
+
+    .home-card-holder {
+        flex-direction: column;
+    }
+
+    .home-left-side {
+        height: 100%;
+    }
+
+}
+

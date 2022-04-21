@@ -1,0 +1,47 @@
+.Ponuda {
+    position: relative;
+    background-image: url(../assets/brakumlogo2.jpg.png);
+    background-position: right;
+    background-size: cover;
+    height: 100vh;
+}
+
+.ponuda-holder {
+    width: 91%;
+    margin: 0 auto;
+    padding: 4rem 0;
+}
+
+.ponuda-holder h1 {
+    font-size: 4rem;
+    font-weight: 700;
+    color: var(--color-blue);
+    margin-bottom: 3rem;
+}
+
+.ponuda-holder p {
+    font-size: 1.8rem;
+    padding: 1.5rem 0;
+    background-color: rgba(255, 255, 255, 0.856);
+}
+
+.ponuda-modal {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to right bottom, #ffffff50, #151e3f5e);
+}
+
+@media screen and (max-width: 500px) {
+    .ponuda-holder p {
+        font-size: 1.4rem;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .ponuda-holder p {
+        font-size: 1rem;
+    }
+}
